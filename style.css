@@ -47,7 +47,8 @@ header p {
   height: 180px;
   object-fit: cover;
   border-radius: 50%;
-  border: 4px solid #151617;
+  border: 2px solid #0a2a4a;
+  margin-top: 2rem;
 }
 
 .avatar-container figcaption {
@@ -135,4 +136,14 @@ nav button {
     width: 140px;
     height: 140px;
   }
+  
+  @media (max-width: 600px) {
+  .user-info section {
+    flex: 1 1 100%;
+  }
+  .user-info {
+    gap: 1rem;
+  }
+}
+
 }
