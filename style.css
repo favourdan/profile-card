@@ -52,7 +52,7 @@ header p {
 }
 
 .avatar-container figcaption {
-  margin-top: 0.5rem;
+  margin: 0.5rem 1rem 0rem 0.5rem;
   color: #555;
 }
 
@@ -136,13 +136,13 @@ nav button {
     width: 140px;
     height: 140px;
   }
-  
+
   @media (max-width: 600px) {
   .user-info section {
     flex: 1 1 100%;
   }
   .user-info {
-    gap: 1rem;
+    gap: 0.5rem;
   }
 }
 
