@@ -1,11 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="contact.css" />
+  <script defer src="contact.js"></script>
 </head>
 <body>
-    <h1>No 27 Adebayo street</h1>
+  <main>
+    <h1>Contact Us</h1>
+    <form id="contact-form" novalidate>
+      <label for="contact-name">Full Name</label>
+      <input
+        type="text"
+        id="contact-name"
+        data-testid="test-contact-name"
+        aria-describedby="error-name"
+        placeholder="Enter your full name"
+        required
+      />
+      <span id="error-name" class="error" data-testid="test-contact-error-name"></span>
+
+      <label for="contact-email">Email</label>
+      <input
+        type="email"
+        id="contact-email"
+        data-testid="test-contact-email"
+        aria-describedby="error-email"
+        placeholder="Enter your email"
+        required
+      />
+      <span id="error-email" class="error" data-testid="test-contact-error-email"></span>
+
+      <label for="contact-subject">Subject</label>
+      <input
+        type="text"
+        id="contact-subject"
+        data-testid="test-contact-subject"
+        aria-describedby="error-subject"
+        placeholder="Enter subject"
+        required
+      />
+      <span id="error-subject" class="error" data-testid="test-contact-error-subject"></span>
+
+      <label for="contact-message">Message</label>
+      <textarea
+        id="contact-message"
+        data-testid="test-contact-message"
+        aria-describedby="error-message"
+        placeholder="Write your message..."
+        required
+      ></textarea>
+      <span id="error-message" class="error" data-testid="test-contact-error-message"></span>
+
+      <button type="submit" data-testid="test-contact-submit">Send Message</button>
+    </form>
+  </main>
+
+  <div id="toast" data-testid="test-contact-success"></div>
 </body>
 </html>
